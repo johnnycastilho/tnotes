@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/label_color"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingEnd="0dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="0dp"
+    android:paddingStart="10dp"
+    tools:background="#3320c1">
+
+    <com.andexert.library.RippleView
+        android:id="@+id/ripple_note_item"
+        rv_centered="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:background="@color/bg_note_item"
+            android:paddingBottom="9dp"
+            android:paddingTop="9dp">
+
+            <TextView
+                android:id="@+id/note_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/title_note_item"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Título da Nota" />
+
+            <TextView
+                android:id="@+id/date_created"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/note_title"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:textSize="12sp"
+                tools:text="Criado em 06 de set de 2015" />
+
+        </RelativeLayout>
+    </com.andexert.library.RippleView>
+
+</LinearLayout>
